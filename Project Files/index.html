@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latitude Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">Latitude Project</a>
+
+        <!-- nav code starts here -->
+        <ul class="nav justify-content-end nav-list">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./visualizations/clouds.html">Clouds vs. Latitude</a>
+                    <a class="dropdown-item" href="./visualizations/humidity.html">Humidity vs. Latitude</a>
+                    <a class="dropdown-item" href="./visualizations/temp.html">Temperature vs. Latitude</a>
+                    <a class="dropdown-item" href="./visualizations/wind.html">Wind vs. Latitude</a>
+                  </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./compare.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./data.html">Data</a>
+            </li>
+          </ul>
+
+          <!-- small screen -->
+
+          <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+          class="fas fa-bars fa-1x"></i></span></button>
+
+         <!-- navbar content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <!-- link code starts here-->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./visualizations/clouds.html">Clouds vs. Latitude</a>
+                        <a class="dropdown-item" href="./visualizations/humidity.html">Humidity vs. Latitude</a>
+                        <a class="dropdown-item" href="./visualizations/temp.html">Temperature vs. Latitude</a>
+                        <a class="dropdown-item" href="./visualizations/wind.html">Wind vs. Latitude</a>
+                      </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./compare.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./data.html">Data</a>
+                </li>
+            </ul>
+    
+      </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <h1>Summary</h1>
+                <img class="float-left mr-3 mb-sm-3 rounded border main-img" src="assets/tempvslat.png">
+                <p>
+                    This project was done in order to study how latitude affects weather as you move closer to the equator.
+                    The main tools used in collecting, cleaning, and visualizing data were OpenWeatherMap and Python tools 
+                    such as MatPlotLib and Pandas. 
+                </p>
+                
+                <p>
+                    Pages included on this site are used to show individual visualizations with descriptions as well as side
+                    by side comparisons, and finally page displaying the full dataset. 
+                </p>
+
+                
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 vis-box">
+                <h3>Visualizations</h3>
+                <div class="mx-auto">
+                    <a href="./visualizations/clouds.html"><div class="col"><img src="./assets/cloudsvslat.png" ></div></a>
+                    <a href="./visualizations/humidity.html"><div class="col"><img src="./assets/humidvslat.png" ></div></a>
+                    <a href="./visualizations/temp.html"><div class="col"><img src="./assets/tempvslat.png" ></div></a>
+                    <a href="./visualizations/wind.html"><div class="col"><img src="./assets/windvslat.png" ></div></a>
+                </div>  
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
